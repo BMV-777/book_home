@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+  import { Route,Routes } from "react-router-dom";
+ import AppBar from "./components/AppBar/AppBar";
+import Container from "./components/Container/Container";
+import AuthorsView from "./components/views/AuthorsView";
+import BookDetailsView from "./components/views/BookDetailsView";
+import BooksView from "./components/views/BooksView";
 
+import HomeView from "./components/views/HomeView";
+ import NotFoundView from "./components/views/NotFoundView";
+// import db from '../db.json';
+
+// console.log(db)
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container>
+      <AppBar />
+
+      <Routes>
+        <Route path="/" element={<HomeView />} />
+        <Route path="/authors" element={<AuthorsView />} />
+        <Route path="/books" element={<BooksView />} />
+        <Route path="/books/:bookId" element={<BookDetailsView />} />
+        <Route path="*" element={<NotFoundView />} />
+      </Routes>
+    </Container>
+    // --delay 300 --port 4040
   );
 }
 

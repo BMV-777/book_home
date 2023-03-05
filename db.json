@@ -1,0 +1,70 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "imgUrl": "https://images.booksense.com/images/268/201/9780593201268.jpg",
+      "title": "House",
+      "descry": "Хелен дает нам темного, измученного героя-вампира, которого мы все любим, в чувственном паранормальном романе со всеми чувствами",
+      "genre": "реализм",
+      "authorId": 1
+    },
+    {
+      "id": 2,
+      "imgUrl": "https://images.booksense.com/images/006/257/9781728257006.jpg",
+      "title": "Rom",
+      "descry": "Хелен дает нам темного, измученного героя-вампира, которого мы все любим, в чувственном паранормальном романе со всеми чувствами",
+      "genre": "фантастика",
+      "authorId": 1
+    },
+    {
+      "id": 3,
+      "imgUrl": "https://images.booksense.com/images/268/201/9780593201268.jpg",
+      "title": "Katee Robert",
+      "descry": "Представьте, что вы возвращаетесь в родной город, который вам не терпится покинуть, а затем остаетесь в доме с привидениями, пока вы там.",
+      "genre": "history",
+      "authorId": 1
+    },
+    {
+      "id": 4,
+      "imgUrl": "https://images.booksense.com/images/792/231/9781728231792.jpg",
+      "title": "Wicked Beauty",
+      "descry": "Обычно правообладатель имеет законные основания распоряжаться тем, как другие лица могут использовать его контент. Ниже перечислены некоторые случаи, в которых использование материалов, защищенных авторским правом, не считается нарушением.",
+      "genre": "реализм",
+      "authorId": 1
+    },
+    {
+      "id": 5,
+      "imgUrl": "https://kbimages1-a.akamaihd.net/19f5778c-3b49-439b-a54a-c0a27d9d4195/353/569/90/False/falling-for-his-best-friend-entangled-brazen.jpg",
+      "title": "Falling For His Best Friend ",
+      "descry": "Read Falling For His Best Friend by Katee Robert available from Rakuten Kobo. Avery Yeung's biological clock just went off early. Thanks to her ...",
+      "genre": "беография",
+      "authorId": 1
+    }
+  ],
+  "authors": [
+    {
+      "id": 1,
+      "name": "Роберт Шекли"
+    },
+    {
+      "id": 2,
+      "name": "Кристофер Фулер"
+    },
+   {
+      "id": 3,
+      "name": "Гарвор Лавкфорд"
+
+   },
+    {
+      "id": 4,
+      "name": "Шерли Шейх"
+
+    },
+   {
+      "id": 5,
+     "name": "Роберт Киасаки"
+
+   }
+  ]
+
+}
