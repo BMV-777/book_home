@@ -1,27 +1,20 @@
-import styled from "./Navigation.module.css";
-import { NavLink } from "react-router-dom";
+// import styled from "./Navigation.module.css";
+import { Link } from "./Navigation.stuled";
 
-let active = {
-  color: "#2196f3",
-};
-let actives = ({ isActive }) => (isActive ? active : undefined);
+// let active = {
+//   color: "#2196f3",
+// };
+// let actives = ({ isActive }) => (isActive ? active : undefined);
 
  const Navigation = () => {
 
   return (
     <nav>
-      <NavLink to="/" className={styled.link} style={actives}>
-        Главная
-      </NavLink>
-      <NavLink to="/authors" className={styled.link} style={actives}>
-        Автор
-      </NavLink>
-      <NavLink to="/books" className={styled.link} style={actives}>
-        Книги
-      </NavLink>
-      <hr/>
+      <Link to="/"> Главная </Link>
+      <Link to="/authors"> Автор</Link>
+      <Link to="/books">Книги </Link>
+      <hr />
     </nav>
-  
   );
 
 }
