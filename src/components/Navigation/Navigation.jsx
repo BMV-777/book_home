@@ -1,10 +1,7 @@
-// import styled from "./Navigation.module.css";
-import { Link } from "./Navigation.stuled";
 
-// let active = {
-//   color: "#2196f3",
-// };
-// let actives = ({ isActive }) => (isActive ? active : undefined);
+import { Link } from "./Navigation.styled";
+
+
 
  const Navigation = () => {
 
@@ -13,7 +10,7 @@ import { Link } from "./Navigation.stuled";
       <Link to="/"> Главная </Link>
       <Link to="/authors"> Автор</Link>
       <Link to="/books">Книги </Link>
-      <hr />
+      
     </nav>
   );
 

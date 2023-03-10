@@ -1,10 +1,10 @@
-// import PageHeading from "../PageHeading/PageHeading";
-import css from './HomeView.module.css';
+import { PageHeading } from "../PageHeading/PageHeading";
+
 export default function HomeView() {
   return (
     <>
-      {/* <PageHeading text ="Добро пожаловать" /> */}
-      <p className={css.listItem}>
+      <PageHeading>Добро пожаловать</PageHeading>
+      <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae natus
         iure autem. Modi dicta porro a similique delectus dolorum culpa
         explicabo quod! Asperiores odit expedita quod! Maiores, sit quam
@@ -23,7 +23,7 @@ export default function HomeView() {
         libero temporibus sunt tempora, similique adipisci?
       </p>
 
-      <p className={css.listItem}>
+      <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae natus
         iure autem. Modi dicta porro a similique delectus dolorum culpa
         explicabo quod! Asperiores odit expedita quod! Maiores, sit quam
@@ -42,7 +42,7 @@ export default function HomeView() {
         libero temporibus sunt tempora, similique adipisci?
       </p>
 
-      <p className={css.listItem}>
+      <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae natus
         iure autem. Modi dicta porro a similique delectus dolorum culpa
         explicabo quod! Asperiores odit expedita quod! Maiores, sit quam
@@ -62,5 +62,4 @@ export default function HomeView() {
       </p>
     </>
   );
-
 }

@@ -7,11 +7,11 @@ import { Container } from "./Layout.styled.js";
 export default function Layout() {
 
   return (
-
     <Container>
       <AppBar />
-      <Outlet/>
+      <Outlet />
+  
     </Container>
-)
+  );
 
 }

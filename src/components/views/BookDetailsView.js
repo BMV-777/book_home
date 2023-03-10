@@ -24,6 +24,7 @@ export default function BookDetailsView() {
           <p>Автор: {book.author.name}</p>
           <p>Описание: {book.descry}</p>
           <p>Жанр: {book.genre}</p>
+          <p>Количество страниц: {book.pages}</p>
         </>
       )}
     </div>

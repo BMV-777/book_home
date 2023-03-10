@@ -1,8 +1,5 @@
+import { Heading } from "./PageHeading.styled";
 
-export default function PageHeading() {
-
-  return (
- <dev></dev>
-)
-
-}
+export const PageHeading = ({ children }) => {
+  return <Heading>{children}</Heading>;
+};

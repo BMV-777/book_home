@@ -1,24 +1,22 @@
-import { useParams } from "react-router-dom";
-//  import { useState, useEffect } from "react";
-// import * as bookShelfApi from "../server/bookshelf-app";
-
+import { Link } from "react-router-dom";
+import { useFetchAuthor } from "../hooks/useFetchAuthor";
 
 export default function AuthorSubView() {
    
-  const { authorId } = useParams();
-  console.log(authorId)
+  const authors = useFetchAuthor();
 
-
-  //  useEffect(() => {
-  //    bookShelfApi.fetchBookById(authorId).then(setBook);
-  //  }, [authorId]);
-  
-     const author = authorId.find(author => author.id === Number(authorId))
   return (
     <>
-      {author}
-        {/* <h2 key={author.id}>{author.name}</h2>   */}
-      {/* {book && (<div key={book.id}>{book.name }</div>)} */}
+      {!authors && <h2>Loading...</h2>}
+      {authors && (
+        <ul>
+          {authors.books.map(book => (
+            <li key={book.id}>
+              <Link to={`/books/${book.id}`} >{book.title}</Link>
+            </li>
+          ))}
+        </ul>
+      )}
     </>
   );
 }
