@@ -26,7 +26,7 @@
     "deploy": "gh-pages -d build",
     "lint:js": "eslint src/**/*.{js,jsx}",
     "eject": "react-scripts eject",
-    "server": "json-server  --watch db.json -p 3001"
+    "server": "json-server  --watch src/db.json -p 3001"
   },
   "eslintConfig": {
     "extends": [
